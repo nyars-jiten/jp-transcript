@@ -3,17 +3,17 @@ include!(concat!(env!("OUT_DIR"), "/codegen.rs"));
 // transliterate tlite
 
 /**
- * convert any -> std
- * std -> any
- * unknown -> std
- *
- * furigana ? (allow check no in a kanji)
- * HIRAGANA
-    KATAKANA
-    POLIVANOV
-    HEPBURN
-    NIHON
- */
+* convert any -> std
+* std -> any
+* unknown -> std
+*
+* furigana ? (allow check no in a kanji)
+* HIRAGANA
+   KATAKANA
+   POLIVANOV
+   HEPBURN
+   NIHON
+*/
 
 pub fn convert_from_hiragana() {
     //

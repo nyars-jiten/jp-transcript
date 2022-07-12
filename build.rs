@@ -1,6 +1,6 @@
 use std::env;
 use std::fs::File;
-use std::io::{BufWriter, Write, BufReader, BufRead};
+use std::io::{BufRead, BufReader, BufWriter, Write};
 use std::path::Path;
 
 macro_rules! template {
@@ -31,7 +31,7 @@ static TO_POLIVANOV: phf::Map<&'static str, &'static str> = {to_polivanov};
 #[allow(dead_code)]
 static TO_HEPBURN: phf::Map<&'static str, &'static str> = {to_hepburn};
 #[allow(dead_code)]
-static TO_NIHON: phf::Map<&'static str, &'static str> = {to_nihon}
+static TO_NIHON: phf::Map<&'static str, &'static str> = {to_nihon};
 "#
     };
 }
@@ -73,12 +73,12 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     for line in reader.lines() {
         let current_line = line?;
-        let literals: Vec<&str> = current_line.split("\t").collect();
-        if current_line.is_empty() || current_line.chars().next().unwrap() == '#' || literals.len() != 6 {
+        let literals: Vec<&str> = current_line.split('\t').collect();
+        if current_line.is_empty() || current_line.starts_with("#") || literals.len() != 6 {
             continue;
         }
 
-        for i in 0..6 {
+        for i in 0..literals.len() {
             if (i == 1 || i == 0) && max_chunk_size_kana < literals[i].chars().count() {
                 max_chunk_size_kana = literals[i].chars().count();
             } else if i == 2 && max_chunk_size_std < literals[i].chars().count() {
@@ -106,7 +106,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         }
 
         if !stored_polivanov.contains(&polivanov_literal) {
-            from_polivanov_builder.entry(polivanov_literal.clone(), &format!("\"{}\"", &std_literal));
+            from_polivanov_builder
+                .entry(polivanov_literal.clone(), &format!("\"{}\"", &std_literal));
             stored_polivanov.push(polivanov_literal.clone());
         }
 
@@ -150,7 +151,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         to_nihon = to_nihon_builder.build(),
     )
     .unwrap();
-    write!(&mut file, ";\n").unwrap();
 
     Ok(())
 }
