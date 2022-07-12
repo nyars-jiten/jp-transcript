@@ -1,0 +1,11 @@
+[package]
+name = "tensha"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+phf = { version = "0.10" }
+
+[build-dependencies]
+phf_codegen = { version = "0.10" }
