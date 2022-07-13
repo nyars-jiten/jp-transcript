@@ -3,6 +3,9 @@ name = "jp-transcript"
 version = "0.1.0"
 edition = "2021"
 build = "build.rs"
+description = "simple lib for converting japanese text to its transliteration"
+license = "MIT"
+repository = "https://github.com/nyars-jiten/jp-transcript"
 
 [lib]
 crate-type = ["cdylib"]
