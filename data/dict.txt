@@ -1,19 +1,58 @@
 # katakana hiragana std polivanov hepburn nihon
 
-っ	ッ	*tu	*ту	*tu	*tu
+あ	ア	a	а	a	a
+い	イ	i	и	i	i
+う	ウ	u	у	u	u
+え	エ	e	э	e	e
+お	オ	o	о	o	o
+
+か	カ	ka	ка	ka	ka
+き	キ	ki	ки	ki	ki
+く	ク	ku	ку	ku	ku
+け	ケ	ke	кэ	ke	ke
+こ	コ	ko	ко	ko	ko
+が	ガ	ga	га	ga	ga
+ぎ	ギ	gi	ги	gi	gi
+ぐ	グ	gu	гу	gu	gu
+げ	ゲ	ge	гэ	ge	ge
+ご	ゴ	go	го	go	go
+
 きゃ	キャ	kya	кя	kya	kya
 きゅ	キュ	kyu	кю	kyu	kyu
 きょ	キョ	kyo	кё	kyo	kyo
 ぎゃ	ギャ	gya	гя	gya	gya
 ぎゅ	ギュ	gyu	гю	gyu	gyu
 ぎょ	ギョ	gyo	гё	gyo	gyo
+
+さ	サ	sa	са	sa	sa
 し	シ	shi	си	shi	si
+す	ス	su	су	su	su
+せ	セ	se	сэ	se	se
+そ	ソ	so	со	so	so
+ざ	ザ	za	дза	za	za
+じ	ジ	ji	дзи	ji	zi
+ず	ズ	zu	дзу	zu	zu
+ぜ	ゼ	ze	дзэ	ze	ze
+ぞ	ゾ	zo	дзо	zo	zo
+
 しゃ	シャ	sha	ся	sha	sya
 しゅ	シュ	shu	сю	shu	syu
 しょ	ショ	sho	сё	sho	syo
+じゃ	ジャ	ja	дзя	ja	zya
+じゅ	ジュ	ju	дзю	ju	zyu
+じょ	ジョ	jo	дзё	jo	zyo
+
+た	タ	ta	та	ta	ta
+て	テ	te	тэ	te	te
+と	ト	to	то	to	to
+だ	ダ	da	да	da	da
+づ	ヅ	du	ду	du	du
+で	デ	de	дэ	de	de
+ど	ド	do	до	do	do
 ち	チ	chi	ти	chi	ti
 つ	ツ	tsu	цу	tsu	tu
 ぢ	ヂ	dji	дзи	dji	di
+
 つぁ	ツァ	tsa	ца	tsa	t'a
 つぃ	ツィ	tsi	ци	tsi	t'i
 つぇ	ツェ	tse	цэ	tse	t'e
@@ -24,6 +63,7 @@
 ぢゃ	ヂャ	dja	дзя	dja	dya
 ぢゅ	ヂュ	dju	дзю	dju	dyu
 ぢょ	ヂョ	djo	дзё	djo	dyo
+
 にゃ	ニャ	nya	ня	nya	nya
 にゅ	ニュ	nyu	ню	nyu	nyu
 にょ	ニョ	nyo	нё	nyo	nyo
@@ -48,72 +88,53 @@
 ゔゃ	ヴャ	vya	бя	vya	vya
 ゔゅ	ヴュ	vyu	бю	vyu	vyu
 ゔょ	ヴョ	vyo	бё	vyo	vyo
-か	カ	ka	ка	ka	ka
-き	キ	ki	ки	ki	ki
-く	ク	ku	ку	ku	ku
-け	ケ	ke	кэ	ke	ke
-こ	コ	ko	ко	ko	ko
-が	ガ	ga	га	ga	ga
-ぎ	ギ	gi	ги	gi	gi
-ぐ	グ	gu	гу	gu	gu
-げ	ゲ	ge	гэ	ge	ge
-ご	ゴ	go	го	go	go
-さ	サ	sa	са	sa	sa
-す	ス	su	су	su	su
-せ	セ	se	сэ	se	se
-そ	ソ	so	со	so	so
-ざ	ザ	za	дза	za	za
-じ	ジ	ji	дзи	ji	zi
-ず	ズ	zu	дзу	zu	zu
-ぜ	ゼ	ze	дзэ	ze	ze
-ぞ	ゾ	zo	дзо	zo	zo
-じゃ	ジャ	ja	дзя	ja	zya
-じゅ	ジュ	ju	дзю	ju	zyu
-じょ	ジョ	jo	дзё	jo	zyo
-た	タ	ta	та	ta	ta
-て	テ	te	тэ	te	te
-と	ト	to	то	to	to
-だ	ダ	da	да	da	da
-づ	ヅ	du	ду	du	du
-で	デ	de	дэ	de	de
-ど	ド	do	до	do	do
+
+
 な	ナ	na	на	na	na
 に	ニ	ni	ни	ni	ni
 ぬ	ヌ	nu	ну	nu	nu
 ね	ネ	ne	нэ	ne	ne
 の	ノ	no	но	no	no
+
 は	ハ	ha	ха	ha	ha
 ひ	ヒ	hi	хи	hi	hi
 ふ	フ	fu	фу	fu	hu
 へ	ヘ	he	хэ	he	he
 ほ	ホ	ho	хо	ho	ho
+
 ば	バ	ba	ба	ba	ba
 び	ビ	bi	би	bi	bi
 ぶ	ブ	bu	бу	bu	bu
 べ	ベ	be	бэ	be	be
 ぼ	ボ	bo	бо	bo	bo
+
 ぱ	パ	pa	па	pa	pa
 ぴ	ピ	pi	пи	pi	pi
 ぷ	プ	pu	пу	pu	pu
 ぺ	ペ	pe	пэ	pe	pe
 ぽ	ポ	po	по	po	po
+
 ま	マ	ma	ма	ma	ma
 み	ミ	mi	ми	mi	mi
 む	ム	mu	му	mu	mu
 め	メ	me	мэ	me	me
 も	モ	mo	мо	mo	mo
+
 や	ヤ	ya	я	ya	ya
 ゆ	ユ	yu	ю	yu	yu
 よ	ヨ	yo	ё	yo	yo
+
 ら	ラ	ra	ра	ra	ra
 り	リ	ri	ри	ri	ri
 る	ル	ru	ру	ru	ru
 れ	レ	re	рэ	re	re
 ろ	ロ	ro	ро	ro	ro
+
 わ	ワ	wa	ва	wa	wa
 を	ヲ	wo	во	wo	wo
 ゐ	ヰ	wyi	ви	wyi	wyi
 ゑ	ヱ	wye	вэ	wye	wye
+
 うぃ	ウィ	wi	ви	wi	wi
 うぇ	ウェ	we	вэ	we	we
 ゔぁ	ヴァ	va	ва	va	va
@@ -121,22 +142,23 @@
 ゔ	ヴ	vu	ву	vu	vu
 ゔぇ	ヴェ	ve	вэ	ve	ve
 ゔぉ	ヴォ	vo	во	vo	vo
-あ	ア	a	а	a	a
-い	イ	i	и	i	i
-う	ウ	u	у	u	u
-え	エ	e	э	e	e
-お	オ	o	о	o	o
+
 ん	ン	n	н	n	n
 ん	ン	n'	нъ	n'	n'
+
+っ	ッ	*tu	*ту	*tu	*tu
+は	ハ	*ha	ва	ha	ha
+ゃ	ャ	*ya	я	ya	ya
+ゅ	ュ	*yu	ю	yu	yu
+ょ	ョ	*yo	ё	yo	yo
 ぁ	ァ	*a	а	a	a
 ぃ	ィ	*i	и	i	i
 ぅ	ゥ	*u	у	u	u
 ぇ	ェ	*e	э	e	e
 ぉ	ォ	*o	о	o	o
-は	ハ	*ha	ва	ha	ha
-ゃ	ャ	*ya	я	ya	ya
-ゅ	ュ	*yu	ю	yu	yu
-ょ	ョ	*yo	ё	yo	yo
+
+# low priority
+
 くぁ	クァ	kwa	ка	kwa	kwa
 くィ	クィ	kwi	ки	kwi	kwi
 くぅ	クゥ	kwu	ку	kwu	kwu
