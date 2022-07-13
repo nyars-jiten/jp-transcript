@@ -7,11 +7,11 @@ macro_rules! template {
     () => {
         r#"
 #[allow(dead_code)]
-const MAX_CHUNK_SIZE_KANA: i32 = {max_chunk_size_kana};
+const MAX_CHUNK_SIZE_KANA: usize = {max_chunk_size_kana};
 #[allow(dead_code)]
-const MAX_CHUNK_SIZE_STD: i32 = {max_chunk_size_std};
+const MAX_CHUNK_SIZE_STD: usize = {max_chunk_size_std};
 #[allow(dead_code)]
-const MAX_CHUNK_SIZE_MISC: i32 = {max_chunk_size_misc};
+const MAX_CHUNK_SIZE_MISC: usize = {max_chunk_size_misc};
 #[allow(dead_code)]
 static FROM_HIRAGANA: phf::Map<&'static str, &'static str> = {from_hiragana};
 #[allow(dead_code)]
