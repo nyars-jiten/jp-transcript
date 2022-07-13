@@ -74,17 +74,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     for line in reader.lines() {
         let current_line = line?;
         let literals: Vec<&str> = current_line.split('\t').collect();
-        if current_line.is_empty() || current_line.starts_with("#") || literals.len() != 6 {
+        if current_line.is_empty() || current_line.starts_with('#') || literals.len() != 6 {
             continue;
         }
 
-        for i in 0..literals.len() {
-            if (i == 1 || i == 0) && max_chunk_size_kana < literals[i].chars().count() {
-                max_chunk_size_kana = literals[i].chars().count();
-            } else if i == 2 && max_chunk_size_std < literals[i].chars().count() {
-                max_chunk_size_std = literals[i].chars().count();
-            } else if max_chunk_size_misc < literals[i].chars().count() {
-                max_chunk_size_misc = literals[i].chars().count();
+        for (i, literal) in literals.iter().enumerate() {
+            if (i == 1 || i == 0) && max_chunk_size_kana < literal.chars().count() {
+                max_chunk_size_kana = literal.chars().count();
+            } else if i == 2 && max_chunk_size_std < literal.chars().count() {
+                max_chunk_size_std = literal.chars().count();
+            } else if max_chunk_size_misc < literal.chars().count() {
+                max_chunk_size_misc = literal.chars().count();
             }
         }
 

@@ -10,7 +10,7 @@ include!(concat!(env!("OUT_DIR"), "/codegen.rs"));
 
 #[wasm_bindgen]
 pub fn convert_to_kana(request: String) -> String {
-    convert(&request, Translit::Std, Translit::Hiragana).to_string()
+    convert(&request, Translit::Std, Translit::Hiragana)
 }
 
 // #[wasm_bindgen]
@@ -30,14 +30,13 @@ enum Translit {
 }
 
 fn convert(value: &str, _from: Translit, to: Translit) -> String {
-    let result: String;
     // result = match from {
     //     // Translit::Hiragana => &"",
     //     // Translit::Katakana => &"",
     //     _ => value,
     // };
 
-    result = match to {
+    let result: String = match to {
         Translit::Hiragana => convert_std_to_kana(value),
         Translit::Katakana => convert_std_to_kana(value),
         // Translit::Polivanov => value,
@@ -52,7 +51,6 @@ fn convert(value: &str, _from: Translit, to: Translit) -> String {
 fn convert_std_to_kana(value: &str) -> String {
     let excluded_strs = vec!['-', ' ', '\'', '(', ')', '^'];
     // let excluded_strs_latk = vec!["'", "(", ")", "^"];
-    let double_chars: Vec<char> = "qwrtpsdfghkljzxcvbnm".chars().collect();
 
     let mut table = Translit::Hiragana;
     let raw = value.to_lowercase();
@@ -81,7 +79,7 @@ fn convert_std_to_kana(value: &str) -> String {
 
             match get_table_value(&table, &chunk) {
                 Some(val) => {
-                    result = result + val;
+                    result += val;
                     ci += &chunk.len();
                     break;
                 }
@@ -133,7 +131,8 @@ fn convert_std_to_kana(value: &str) -> String {
             let not_changed_raw: Vec<char> = value.chars().collect();
             result += &not_changed_raw[ci].to_string();
         } else if ci + 1 < raw_chars.len()
-            && ((first_chunk_sym == raw_chars[ci + 1] && double_chars.contains(&first_chunk_sym))
+            && ((first_chunk_sym == raw_chars[ci + 1]
+                && "qwrtpsdfghkljzxcvbnm".chars().any(|x| x == first_chunk_sym))
                 || (first_chunk_sym == 't' && raw_chars[ci + 1] == 'c'))
         {
             result += extract_table_value(&table, "*tu");
@@ -221,7 +220,7 @@ mod tests {
 
         for (source, result) in conditions {
             assert_eq!(
-                convert(*source, Translit::Std, Translit::Hiragana),
+                convert(source, Translit::Std, Translit::Hiragana),
                 *result,
                 "{} => {}",
                 *source,
