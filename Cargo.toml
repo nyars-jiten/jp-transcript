@@ -4,7 +4,15 @@ version = "0.1.0"
 edition = "2021"
 build = "build.rs"
 
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+
 [dependencies]
+wasm-bindgen = { version = "0.2.81", features = ["serde-serialize"] }
 phf = { version = "0.10" }
 
 [build-dependencies]

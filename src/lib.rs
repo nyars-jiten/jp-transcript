@@ -1,6 +1,6 @@
-include!(concat!(env!("OUT_DIR"), "/codegen.rs"));
+use wasm_bindgen::prelude::*;
 
-// transliterate tlite
+include!(concat!(env!("OUT_DIR"), "/codegen.rs"));
 
 /**
 * convert any -> std
@@ -15,8 +15,10 @@ include!(concat!(env!("OUT_DIR"), "/codegen.rs"));
    NIHON
 */
 
-pub fn convert_from_hiragana() {
-    //
+#[wasm_bindgen]
+pub fn convert_from_hiragana(key: JsValue) -> String {
+    let akey: String = key.into_serde().unwrap();
+    convert(&akey).to_string()
 }
 
 pub fn convert_to_polivanov() {
@@ -35,5 +37,6 @@ mod tests {
     fn it_works() {
         let result = convert("あ");
         assert_eq!(result, "a");
+        assert_eq!(convert("あ"), "aa");
     }
 }
