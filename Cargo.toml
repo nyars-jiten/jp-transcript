@@ -12,10 +12,11 @@ crate-type = ["cdylib"]
 
 [profile.release]
 lto = true
+opt-level = 's'
 codegen-units = 1
 
 [dependencies]
-wasm-bindgen = { version = "0.2.81", features = ["serde-serialize"] }
+wasm-bindgen = { version = "0.2.81" }
 phf = { version = "0.10" }
 
 [build-dependencies]

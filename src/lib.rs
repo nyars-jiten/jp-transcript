@@ -2,10 +2,15 @@ use wasm_bindgen::prelude::*;
 
 include!(concat!(env!("OUT_DIR"), "/codegen.rs"));
 
+// #[wasm_bindgen]
+// pub fn convert_to_kana(jsvalue: JsValue) -> String {
+//     let value: String = jsvalue.into_serde().unwrap();
+//     convert(&value, Translit::Std, Translit::Hiragana).to_string()
+// }
+
 #[wasm_bindgen]
-pub fn convert_to_kana(jsvalue: JsValue) -> String {
-    let value: String = jsvalue.into_serde().unwrap();
-    convert(&value, Translit::Std, Translit::Hiragana).to_string()
+pub fn convert_to_kana(request: String) -> String {
+    convert(&request, Translit::Std, Translit::Hiragana).to_string()
 }
 
 // #[wasm_bindgen]
