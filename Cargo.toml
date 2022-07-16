@@ -3,7 +3,7 @@ name = "jp-transcript"
 version = "0.1.0"
 edition = "2021"
 build = "build.rs"
-description = "simple lib for converting japanese text to its transliteration"
+description = "Simple lib for converting japanese texts to its transliteration"
 license = "MIT"
 repository = "https://github.com/nyars-jiten/jp-transcript"
 
