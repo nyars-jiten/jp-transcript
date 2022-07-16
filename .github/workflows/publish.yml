@@ -21,12 +21,17 @@ jobs:
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: Build
         run: wasm-pack build --release --target=bundler --scope "nyars-jiten"
-      # - run: wasm-pack pack
       - name: Publish
-        working-directory: pkg
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" > .npmrc
-          echo "@nyars-jiten:registry=https://npm.pkg.github.com/" >> .npmrc
-          npm publish --registry https://npm.pkg.github.com/
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          package: ./pkg/package.json
+      # - run: wasm-pack pack
+      # - name: Publish
+      #   working-directory: pkg
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      #   run: |
+      #     echo "//npm.pkg.github.com/:_authToken=${{secrets.GITHUB_TOKEN}}" > .npmrc
+      #     echo "@nyars-jiten:registry=https://npm.pkg.github.com/" >> .npmrc
+      #     npm publish --registry https://npm.pkg.github.com/
