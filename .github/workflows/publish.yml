@@ -7,13 +7,12 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    env:
-      NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16.x'
+          registry-url: 'https://npm.pkg.github.com'
       - name: Install wasm-pack
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: Build
@@ -21,8 +20,9 @@ jobs:
       # - run: wasm-pack pack
       - name: Publish
         working-directory: pkg
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
-          echo "registry=https://npm.pkg.github.com/etsune" >> .npmrc
           echo "@etsune:registry=https://npm.pkg.github.com" >> .npmrc
-          npm publish --access=public
+          npm publish --registry=https://npm.pkg.github.com
