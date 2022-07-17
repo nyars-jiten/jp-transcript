@@ -85,9 +85,9 @@
 りゃ	リャ	rya	ря	rya	rya
 りゅ	リュ	ryu	рю	ryu	ryu
 りょ	リョ	ryo	рё	ryo	ryo
-ゔゃ	ヴャ	vya	бя	vya	vya
-ゔゅ	ヴュ	vyu	бю	vyu	vyu
-ゔょ	ヴョ	vyo	бё	vyo	vyo
+ゔゃ	ヴャ	vya	вя	vya	vya
+ゔゅ	ヴュ	vyu	вю	vyu	vyu
+ゔょ	ヴョ	vyo	вё	vyo	vyo
 
 
 な	ナ	na	на	na	na
