@@ -1,4 +1,4 @@
-# katakana hiragana std polivanov hepburn nihon
+# hiragana katakana std polivanov hepburn nihon
 
 あ	ア	a	а	a	a
 い	イ	i	и	i	i
@@ -43,20 +43,16 @@
 じょ	ジョ	jo	дзё	jo	zyo
 
 た	タ	ta	та	ta	ta
+ち	チ	chi	ти	chi	ti
+つ	ツ	tsu	цу	tsu	tu
 て	テ	te	тэ	te	te
 と	ト	to	то	to	to
 だ	ダ	da	да	da	da
+ぢ	ヂ	dji	дзи	dji	di
 づ	ヅ	du	дзу	zu	du
 で	デ	de	дэ	de	de
 ど	ド	do	до	do	do
-ち	チ	chi	ти	chi	ti
-つ	ツ	tsu	цу	tsu	tu
-ぢ	ヂ	dji	дзи	dji	di
 
-つぁ	ツァ	tsa	ца	tsa	t'a
-つぃ	ツィ	tsi	ци	tsi	t'i
-つぇ	ツェ	tse	цэ	tse	t'e
-つぉ	ツォ	tso	цо	tso	t'o
 ちゃ	チャ	cha	тя	cha	tya
 ちゅ	チュ	chu	тю	chu	tyu
 ちょ	チョ	cho	тё	cho	tyo
@@ -64,9 +60,31 @@
 ぢゅ	ヂュ	dju	дзю	dju	dyu
 ぢょ	ヂョ	djo	дзё	djo	dyo
 
+な	ナ	na	на	na	na
+に	ニ	ni	ни	ni	ni
+ぬ	ヌ	nu	ну	nu	nu
+ね	ネ	ne	нэ	ne	ne
+の	ノ	no	но	no	no
 にゃ	ニャ	nya	ня	nya	nya
 にゅ	ニュ	nyu	ню	nyu	nyu
 にょ	ニョ	nyo	нё	nyo	nyo
+
+は	ハ	ha	ха	ha	ha
+ひ	ヒ	hi	хи	hi	hi
+ふ	フ	fu	фу	fu	hu
+へ	ヘ	he	хэ	he	he
+ほ	ホ	ho	хо	ho	ho
+ば	バ	ba	ба	ba	ba
+び	ビ	bi	би	bi	bi
+ぶ	ブ	bu	бу	bu	bu
+べ	ベ	be	бэ	be	be
+ぼ	ボ	bo	бо	bo	bo
+ぱ	パ	pa	па	pa	pa
+ぴ	ピ	pi	пи	pi	pi
+ぷ	プ	pu	пу	pu	pu
+ぺ	ペ	pe	пэ	pe	pe
+ぽ	ポ	po	по	po	po
+
 ひゃ	ヒャ	hya	хя	hya	hya
 ひゅ	ヒュ	hyu	хю	hyu	hyu
 ひょ	ヒョ	hyo	хё	hyo	hyo
@@ -79,46 +97,15 @@
 ふゃ	フャ	fya	фя	fya	hya
 ふゅ	フュ	fyu	фю	fyu	hyu
 ふょ	フョ	fyo	фё	fyo	hyo
-みゃ	ミャ	mya	мя	mya	mya
-みゅ	ミュ	myu	мю	myu	myu
-みょ	ミョ	myo	мё	myo	myo
-りゃ	リャ	rya	ря	rya	rya
-りゅ	リュ	ryu	рю	ryu	ryu
-りょ	リョ	ryo	рё	ryo	ryo
-ゔゃ	ヴャ	vya	вя	vya	vya
-ゔゅ	ヴュ	vyu	вю	vyu	vyu
-ゔょ	ヴョ	vyo	вё	vyo	vyo
-
-
-な	ナ	na	на	na	na
-に	ニ	ni	ни	ni	ni
-ぬ	ヌ	nu	ну	nu	nu
-ね	ネ	ne	нэ	ne	ne
-の	ノ	no	но	no	no
-
-は	ハ	ha	ха	ha	ha
-ひ	ヒ	hi	хи	hi	hi
-ふ	フ	fu	фу	fu	hu
-へ	ヘ	he	хэ	he	he
-ほ	ホ	ho	хо	ho	ho
-
-ば	バ	ba	ба	ba	ba
-び	ビ	bi	би	bi	bi
-ぶ	ブ	bu	бу	bu	bu
-べ	ベ	be	бэ	be	be
-ぼ	ボ	bo	бо	bo	bo
-
-ぱ	パ	pa	па	pa	pa
-ぴ	ピ	pi	пи	pi	pi
-ぷ	プ	pu	пу	pu	pu
-ぺ	ペ	pe	пэ	pe	pe
-ぽ	ポ	po	по	po	po
 
 ま	マ	ma	ма	ma	ma
 み	ミ	mi	ми	mi	mi
 む	ム	mu	му	mu	mu
 め	メ	me	мэ	me	me
 も	モ	mo	мо	mo	mo
+みゃ	ミャ	mya	мя	mya	mya
+みゅ	ミュ	myu	мю	myu	myu
+みょ	ミョ	myo	мё	myo	myo
 
 や	ヤ	ya	я	ya	ya
 ゆ	ユ	yu	ю	yu	yu
@@ -129,22 +116,19 @@
 る	ル	ru	ру	ru	ru
 れ	レ	re	рэ	re	re
 ろ	ロ	ro	ро	ro	ro
+りゃ	リャ	rya	ря	rya	rya
+りゅ	リュ	ryu	рю	ryu	ryu
+りょ	リョ	ryo	рё	ryo	ryo
 
 わ	ワ	wa	ва	wa	wa
 を	ヲ	wo	во	wo	wo
 ゐ	ヰ	wyi	ви	wyi	wyi
 ゑ	ヱ	wye	вэ	wye	wye
 
-うぃ	ウィ	wi	ви	wi	wi
-うぇ	ウェ	we	вэ	we	we
-ゔぁ	ヴァ	va	ва	va	va
-ゔぃ	ヴィ	vi	ви	vi	vi
-ゔ	ヴ	vu	ву	vu	vu
-ゔぇ	ヴェ	ve	вэ	ve	ve
-ゔぉ	ヴォ	vo	во	vo	vo
-
 ん	ン	n	н	n	n
 ん	ン	n'	нъ	n'	n'
+
+# low priority
 
 っ	ッ	*tu	*ту	*tu	*tu
 は	ハ	*ha	ва	ha	ha
@@ -157,13 +141,28 @@
 ぇ	ェ	*e	э	e	e
 ぉ	ォ	*o	о	o	o
 
-# low priority
+ゔ	ヴ	vu	ву	vu	vu
+ゔぁ	ヴァ	va	ва	va	va
+ゔぃ	ヴィ	vi	ви	vi	vi
+うぃ	ウィ	wi	ви	wi	wi
+うぇ	ウェ	we	вэ	we	we
+ゔぇ	ヴェ	ve	вэ	ve	ve
+ゔぉ	ヴォ	vo	во	vo	vo
+ゔゃ	ヴャ	vya	вя	vya	vya
+ゔゅ	ヴュ	vyu	вю	vyu	vyu
+ゔょ	ヴョ	vyo	вё	vyo	vyo
+
+つぁ	ツァ	tsa	ца	tsa	t'a
+つぃ	ツィ	tsi	ци	tsi	t'i
+つぇ	ツェ	tse	цэ	tse	t'e
+つぉ	ツォ	tso	цо	tso	t'o
 
 くぁ	クァ	kwa	ка	kwa	kwa
 くィ	クィ	kwi	ки	kwi	kwi
 くぅ	クゥ	kwu	ку	kwu	kwu
 くぇ	クェ	kwe	кэ	kwe	kwe
 くぉ	クォ	kwo	ко	kwo	kwo
+
 しェ	シェ	she	сэ	she	se
 でゃ	デャ	dya	дя	dya	dya
 でゅ	デュ	dyu	дю	dyu	dyu
