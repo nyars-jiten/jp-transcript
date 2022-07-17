@@ -46,7 +46,7 @@
 て	テ	te	тэ	te	te
 と	ト	to	то	to	to
 だ	ダ	da	да	da	da
-づ	ヅ	du	ду	du	du
+づ	ヅ	du	дзу	zu	du
 で	デ	de	дэ	de	de
 ど	ド	do	до	do	do
 ち	チ	chi	ти	chi	ti
